@@ -1,30 +1,29 @@
 -- BORRAR TABLA person SI EXISTE
-DROP TABLE IF EXISTS person;
+DROP TABLE IF EXISTS student;
 
 
--- CREAR TABLA person
-CREATE TABLE person (
+-- CREAR TABLA student
+CREATE TABLE student (
     id SERIAL PRIMARY KEY NOT NULL,
-    id_type VARCHAR(50) NOT NULL,
-    id_number VARCHAR(15) NOT NULL,
-    name VARCHAR(80) NOT NULL,
-    lastname VARCHAR(80) NOT NULL,
-    cellphone VARCHAR(9) NOT NULL,
-    email VARCHAR(80) NOT NULL,
-	level INTEGER NOT NULL,
-    username VARCHAR(80) NOT NULL,
-    password VARCHAR(80) NOT NULL,
-    active BOOLEAN NOT NULL
+	person_id INTEGER NOT NULL,
+	career_id INTEGER NOT NULL,
+	institutional_email VARCHAR(80) NOT NULL,
+	pay_method VARCHAR(80) NOT NULL,
+	admission_date VARCHAR(30) NOT NULL,
+	guardian_name VARCHAR(80) NOT NULL,
+	home_phone CHAR(9) NOT NULL,
+	status VARCHAR(30) NOT NULL
 );
 
 
--- INSERTAR REGISTROS DE person
-INSERT INTO person
-(id_type,id_number,name,lastname,cellphone,email,level,username,password,active)
+-- INSERTAR REGISTROS DE student
+INSERT INTO student
+(person_id,career_id,institutional_email,pay_method,admission_date,guardian_name,home_phone,status)
 VALUES
-('DNI','70335061','Juan Gabriel','Condori Jara','940460321','juan@gmail.com',1,'juan','12345@ABC',true),
-('DNI','71453657','Carlos Daniel','Sanchez Lira','948935456','carlos@gmail.com',1,'carlos','12345@ABC',true);
+(1,1,'juan@vallegrande.edu.pe','Dinero en Efectivo','2022-10-10','Maria Carmen Jara Nuñez','958454679','Estudiante'),
+(2,2,'carlos@vallegrande.edu.pe','Dinero en Efectivo','2022-10-10','Ana Luz Lira Carbonel','978456345','Egresado'),
+(3,2,'alex@vallegrande.edu.pe','Dinero en Efectivo','2022-10-10','Rosa Carmen Campos Lara','967453453','Retirado');
 
 
---CONSULTAR REGISTROS DE person
-SELECT * FROM person;
+--CONSULTAR REGISTROS DE student
+SELECT * FROM student;

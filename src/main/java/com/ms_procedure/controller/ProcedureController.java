@@ -2,7 +2,7 @@ package com.ms_procedure.controller;
 
 import com.ms_procedure.model.Procedure;
 import com.ms_procedure.service.ProcedureService;
-import net.sf.jasperreports.engine.JRException;
+//import net.sf.jasperreports.engine.JRException;
 import org.springframework.http.ResponseEntity;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -55,10 +55,10 @@ public class ProcedureController {
     public void cambiarPhase10(@PathVariable Integer id) {
         procedureService.cambiarPhase10(id); }
 
-    @GetMapping("/report1/{id}")
+  /*  @GetMapping("/report1/{id}")
     public String generateReport(@PathVariable Long id) throws Exception, FileNotFoundException, JRException {
         return procedureService.exportReport1(id);
-    }
+    }*/
 
     @GetMapping("/phase_id/{phase_id}")
     public Flux<Procedure> findByPhaseId(@PathVariable Integer phase_id)

@@ -17,7 +17,7 @@ import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 import lombok.extern.slf4j.Slf4j;
 import lombok.*;
-import net.sf.jasperreports.engine.data.JRBeanCollectionDataSource;
+//import net.sf.jasperreports.engine.data.JRBeanCollectionDataSource;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -144,11 +144,11 @@ public class ProcedureServiceImpl extends Conexion implements ProcedureService {
         //load file and compile it
         File file = ResourceUtils.getFile("classpath:PostgresProcedure2.jrxml");
         JasperReport jasperReport = JasperCompileManager.compileReport(file.getAbsolutePath());
-        JRBeanCollectionDataSource dataSource = new JRBeanCollectionDataSource(procedures);
+      //  JRBeanCollectionDataSource dataSource = new JRBeanCollectionDataSource(procedures);
         Map<String, Object> parameters = new HashMap<>();
         parameters.put("createdBy", "Java Techie");
         parameters.put("titulo", id);
-        JasperPrint jasperPrint = JasperFillManager.fillReport(jasperReport, parameters, dataSource);
+       // JasperPrint jasperPrint = JasperFillManager.fillReport(jasperReport, parameters, dataSource);
  /*       if (reportFormat.equalsIgnoreCase("html")) {
             JasperExportManager.exportReportToHtmlFile(jasperPrint, path + "\\titi.html");
         }
@@ -158,7 +158,7 @@ public class ProcedureServiceImpl extends Conexion implements ProcedureService {
         if (reportFormat.equalsIgnoreCase("id")) {
             JasperExportManager.exportReportToPdfFile(jasperPrint, path + "\\titi.pdf");
         }*/
-        JasperExportManager.exportReportToPdfFile(jasperPrint, path + "\\EgresadoTítulo.pdf");
+     //   JasperExportManager.exportReportToPdfFile(jasperPrint, path + "\\EgresadoTítulo.pdf");
         return "report generated in path : " + path;
     }
 
