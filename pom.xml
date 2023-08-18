@@ -9,12 +9,13 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com</groupId>
-	<artifactId>ms-procedure</artifactId>
+	<artifactId>ms-person</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>ms-procedure</name>
+	<name>ms-person</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
-		<java.version>11</java.version>
+		<java.version>17</java.version>
+		<sonar.qualitygate.wait>true</sonar.qualitygate.wait>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -55,11 +56,6 @@
 			<artifactId>feign-reactor-spring-cloud-starter</artifactId>
 			<version>3.2.6</version>
 			<type>pom</type>
-		</dependency>
-		<dependency>
-			<groupId>net.sf.jasperreports</groupId>
-			<artifactId>jasperreports</artifactId>
-			<version>6.9.0</version>
 		</dependency>
 	</dependencies>
 

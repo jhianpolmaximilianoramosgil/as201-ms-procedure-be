@@ -1,13 +1,5 @@
-FROM openjdk:11-jre-slim
-WORKDIR /app
-COPY target/procedure_config-0.0.1-SNAPSHOT.jar app.jar
-ENV DB_URL ${DB_URL}
-ENV DB_USERNAME ${DB_USERNAME}
-ENV DB_PASSWORD ${DB_PASSWORD}
-ENV PROFILE ${PROFILE}
-
-ENV MS_INSTITUTE_URL ${MS_INSTITUTE_URL}
-ENV MS_PHASE_URL ${MS_PHASE_URL}
-ENV MS_PROCEDURE_TYPE_URL ${MS_PROCEDURE_TYPE_URL}
-EXPOSE 8088
-ENTRYPOINT ["java", "-Dspring.profiles.active=$PROFILE", "-Duser.timezone=GMT-5", "-jar", "app.jar"]
+FROM openjdk:17
+VOLUME /tmp
+COPY "./target/ms-person-0.0.1-SNAPSHOT.jar" "/app.jar"
+EXPOSE 8085
+ENTRYPOINT ["java", "-jar", "/app.jar"]

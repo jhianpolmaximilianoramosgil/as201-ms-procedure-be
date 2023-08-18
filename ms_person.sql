@@ -1,5 +1,13 @@
--- BORRAR TABLA person SI EXISTE
-DROP TABLE IF EXISTS person;
+-- CREAR DATABASE ms_person
+CREATE DATABASE "ms_person"
+    WITH 
+    OWNER = postgres
+    ENCODING = 'UTF8'
+    CONNECTION LIMIT = -1;
+
+-- COMENTAR DATABASE
+COMMENT ON DATABASE "ms_person"
+    IS 'Person Microservice Database';
 
 
 -- CREAR TABLA person
@@ -28,3 +36,5 @@ VALUES
 
 --CONSULTAR REGISTROS DE person
 SELECT * FROM person;
+
+
