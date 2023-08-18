@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.16.0.final using JasperReports Library version 6.16.0-48579d909b7943b64690c65c71e07e0b80981928  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="titulo" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="df013db5-f76e-44d3-b0df-bcbc46d93160">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="POSTGRES"/>
+	<style name="Title" fontName="Times New Roman" fontSize="50" isBold="true"/>
+	<style name="SubTitle" forecolor="#736343" fontName="Arial" fontSize="18"/>
+	<style name="Column header" forecolor="#666666" fontName="Arial" fontSize="12" isBold="true"/>
+	<style name="Detail" fontName="Arial" fontSize="12"/>
+	<style name="Row" mode="Transparent">
+		<conditionalStyle>
+			<conditionExpression><![CDATA[$V{REPORT_COUNT}%2 == 0]]></conditionExpression>
+			<style backcolor="#E6DAC3"/>
+		</conditionalStyle>
+	</style>
+	<parameter name="tit" class="java.lang.Long" nestedType="tit"/>
+	<queryString language="SQL">
+		<![CDATA[]]>
+	</queryString>
+	<field name="id" class="java.lang.Long">
+		<property name="com.jaspersoft.studio.field.name" value="id"/>
+		<property name="com.jaspersoft.studio.field.label" value="id"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="student"/>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="310" splitType="Stretch">
+			<staticText>
+				<reportElement style="Title" x="300" y="79" width="210" height="32" uuid="bc1ce1da-8232-46ea-be55-cec4abb986dd"/>
+				<textElement verticalAlignment="Middle">
+					<font size="25"/>
+				</textElement>
+				<text><![CDATA[República del Perú]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Title" x="252" y="109" width="318" height="40" uuid="5ba8c557-61a7-4a5c-a1a2-afebe7878097"/>
+				<textElement verticalAlignment="Middle">
+					<font size="28"/>
+				</textElement>
+				<text><![CDATA[Ministerio de Educación]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Title" x="176" y="159" width="500" height="42" uuid="8360c535-8d04-4cfc-97da-617d1d1c5c74"/>
+				<textElement verticalAlignment="Middle">
+					<font size="36"/>
+				</textElement>
+				<text><![CDATA[A NOMBRE DE LA NACIÓN]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Title" x="1" y="209" width="791" height="50" uuid="6009fc1a-9c50-45f2-8f00-cac2c112a7c4"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[EL DIRECTOR GENERAL DEL INSTITUTO DE EDUCACIÓN SUPERIOR TECNOLÓGICO PRIVADO "VALLE GRANDE"]]></text>
+			</staticText>
+			<image>
+				<reportElement x="20" y="60" width="140" height="100" uuid="830b0ffb-2194-4527-ae8f-4ac886ae128a"/>
+				<imageExpression><![CDATA["unnamed (1).png"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="640" y="20" width="162" height="135" uuid="6f9ec679-c43e-42ca-9489-fcfde384a012"/>
+				<imageExpression><![CDATA["usuariooo.png"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="367" y="9" width="100" height="70" uuid="239412c9-19cb-4a0e-a154-b94b22b4a444"/>
+				<imageExpression><![CDATA["escudo.png"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="5" splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="195" splitType="Stretch">
+			<frame>
+				<reportElement style="Row" mode="Opaque" x="20" y="0" width="750" height="10" uuid="fa7cec56-4ec1-48e6-a26e-7266a995d174"/>
+				<staticText>
+					<reportElement style="Title" x="13" y="-4" width="726" height="41" uuid="9b66c3de-ea95-4cc2-9489-07eaa025d05e"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="16" isBold="false"/>
+					</textElement>
+					<text><![CDATA[Ha cumplido satisfactoriamente con las normas y disposiciones reglamentarias vigente, le otorga el título de : .....]]></text>
+				</staticText>
+				<staticText>
+					<reportElement style="Title" x="7" y="-45" width="120" height="41" uuid="7377921f-d605-4f9c-a481-ea79586b9d98"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="16" isBold="false"/>
+					</textElement>
+					<text><![CDATA[Por cuanto Don:]]></text>
+				</staticText>
+				<staticText>
+					<reportElement style="Title" x="128" y="-35" width="620" height="20" uuid="d04df899-a1dc-4d94-a1d9-b343f99662fc"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="16" isBold="false"/>
+					</textElement>
+					<text><![CDATA[........................................................................................................................................................]]></text>
+				</staticText>
+				<staticText>
+					<reportElement style="Title" x="17" y="30" width="726" height="30" uuid="b97af761-056e-494d-8af6-3b32b61ad733"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="16" isBold="true"/>
+					</textElement>
+					<text><![CDATA[PROFESIONAL, TÉCNICO EN ANÁLISIS DE SISTEMAS]]></text>
+				</staticText>
+				<staticText>
+					<reportElement style="Title" x="5" y="61" width="120" height="26" uuid="0799a13f-48ab-4add-afb0-bfffb84cdd17"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="16" isBold="false"/>
+					</textElement>
+					<text><![CDATA[POR TANTO :]]></text>
+				</staticText>
+				<staticText>
+					<reportElement style="Title" x="-6" y="87" width="469" height="26" uuid="16a2667b-3bc6-4f3f-8941-7f22b1111e42"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="16" isBold="false"/>
+					</textElement>
+					<text><![CDATA[Se expide el presente TÍTULO para que se le reconozca como tal :]]></text>
+				</staticText>
+				<staticText>
+					<reportElement style="Title" x="440" y="118" width="310" height="26" uuid="e6b36bc2-7f1a-498f-ae68-bb7478a589b2"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="16" isBold="false"/>
+					</textElement>
+					<text><![CDATA[Dado en San Vicente de Cañete a los 19 días]]></text>
+				</staticText>
+				<staticText>
+					<reportElement style="Title" x="433" y="138" width="238" height="26" uuid="737b3d1e-2c13-42b8-b4d8-d05b76c68f2d"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="16" isBold="false"/>
+					</textElement>
+					<text><![CDATA[del mes de agosto del 2023.]]></text>
+				</staticText>
+				<staticText>
+					<reportElement style="Title" x="10" y="36" width="160" height="20" uuid="1c59c594-171b-4e09-81a7-c5f3074557b0"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="16" isBold="false"/>
+					</textElement>
+					<text><![CDATA[....................................................................................................................................................]]></text>
+				</staticText>
+				<staticText>
+					<reportElement style="Title" x="590" y="36" width="160" height="20" uuid="d58d6a0f-71e3-4bc7-9276-fb26675cbb8c"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="16" isBold="false"/>
+					</textElement>
+					<text><![CDATA[................................................................................................................................................]]></text>
+				</staticText>
+				<staticText>
+					<reportElement style="Title" x="229" y="-45" width="412" height="32" uuid="3fe0310c-649d-4c17-9a51-7b28cef57373"/>
+					<textElement verticalAlignment="Middle">
+						<font size="20"/>
+					</textElement>
+					<text><![CDATA[CONDORI JARA JUAN GABRIEL]]></text>
+				</staticText>
+			</frame>
+			<image>
+				<reportElement x="205" y="118" width="213" height="77" uuid="aebddb36-4841-4e8c-b686-93ea2a6af23d"/>
+				<imageExpression><![CDATA["sellito.png"]]></imageExpression>
+			</image>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="13" splitType="Stretch">
+			<line>
+				<reportElement positionType="FixRelativeToBottom" x="-4" y="11" width="802" height="1" uuid="fa5e88d5-a011-4e32-8f12-ce923f903111"/>
+				<graphicElement>
+					<pen lineWidth="0.5" lineColor="#999999"/>
+				</graphicElement>
+			</line>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="25" splitType="Stretch">
+			<frame>
+				<reportElement mode="Opaque" x="-21" y="1" width="843" height="24" forecolor="#D0B48E" backcolor="#F2EBDF" uuid="5d8169bd-4a75-48c8-8a68-6d3ad5ba9402"/>
+				<textField evaluationTime="Report">
+					<reportElement style="Column header" x="783" y="1" width="40" height="20" forecolor="#736343" uuid="e5e27efa-b599-499b-9ca3-848cb511cb7b"/>
+					<textElement verticalAlignment="Middle">
+						<font size="10" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement style="Column header" x="703" y="1" width="80" height="20" forecolor="#736343" uuid="18cfe1ca-f7d6-48b0-9827-28578b42a5e0"/>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font size="10" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
+				</textField>
+				<textField pattern="EEEEE dd MMMMM yyyy">
+					<reportElement style="Column header" x="22" y="1" width="197" height="20" forecolor="#736343" uuid="fbce24bb-3cb1-44a3-8eec-8c067ddbe5b5"/>
+					<textElement verticalAlignment="Middle">
+						<font size="10" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+				</textField>
+			</frame>
+		</band>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>

@@ -1,0 +1,59 @@
+server:
+  port: 8088
+
+spring:
+  application:
+    name: ms-procedure
+  r2dbc:
+   url: r2dbc:postgresql://104.154.162.191/dbprocedure
+   username: postgres
+   password: '*\PHd-D0c.|"u(ZI'
+
+  #r2dbc:
+   # url: r2dbc:postgresql://localhost:5432/ms_procedure
+    #username: postgres
+    #password: 12345
+
+#  r2dbc:
+#    properties:
+#      sslMode: REQUIRE
+#    url: r2dbc:pool:postgres://pgsqlserver123.postgres.database.azure.com:5432/postgres
+#    username: postgressql@pgsqlserver123
+#    password: Java2020@
+client:
+  ms-person:
+    url: http://www.deillanes.com/backend/person/person
+    #url: ${MS_PERSON_URL}
+  ms-student:
+    url: http://www.deillanes.com/backend/student/student
+    #url: ${MS_STUDENT_URL}
+feign:
+  client:
+    config:
+      ms-person:
+        connectTimeout: 3000
+        readTimeout: 5000
+        loggerLevel: BASIC
+      ms-student:
+        connectTimeout: 5000
+        readTimeout: 5000
+        loggerLevel: FULL
+
+
+
+
+
+
+
+
+
+
+
+logging:
+  file:
+    name: .\logstash\logstash.log
+  level:
+    org:
+      springframework:
+        data:
+          r2dbc: DEBUG

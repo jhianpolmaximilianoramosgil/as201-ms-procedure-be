@@ -1,0 +1,24 @@
+2023-08-18 00:41:35.871  INFO 23052 --- [reactor-http-nio-3] c.m.service.impl.ProcedureServiceImpl    : Procedimiento encontrado con el ID = 13
+2023-08-18 00:41:36.240 DEBUG 23052 --- [reactor-http-nio-3] o.s.d.r2dbc.core.NamedParameterExpander  : Expanding SQL statement [SELECT * FROM procedure WHERE id = :id] to [SELECT * FROM procedure WHERE id = $1]
+2023-08-18 01:04:03.295  INFO 23052 --- [reactor-http-nio-1] c.m.service.impl.ProcedureServiceImpl    : Procedimiento encontrado con el ID = 13
+2023-08-18 01:04:03.368 DEBUG 23052 --- [reactor-http-nio-1] o.s.d.r2dbc.core.NamedParameterExpander  : Expanding SQL statement [SELECT * FROM procedure WHERE id = :id] to [SELECT * FROM procedure WHERE id = $1]
+2023-08-18 01:09:43.520  INFO 23052 --- [reactor-http-nio-5] c.m.service.impl.ProcedureServiceImpl    : Procedimiento encontrado con el ID = 13
+2023-08-18 01:09:43.528 DEBUG 23052 --- [reactor-http-nio-5] o.s.d.r2dbc.core.NamedParameterExpander  : Expanding SQL statement [SELECT * FROM procedure WHERE id = :id] to [SELECT * FROM procedure WHERE id = $1]
+2023-08-18 01:09:57.075  INFO 23052 --- [reactor-http-nio-5] c.m.service.impl.ProcedureServiceImpl    : Procedimiento encontrado con el ID = 13
+2023-08-18 01:09:57.077 DEBUG 23052 --- [reactor-http-nio-5] o.s.d.r2dbc.core.NamedParameterExpander  : Expanding SQL statement [SELECT * FROM procedure WHERE id = :id] to [SELECT * FROM procedure WHERE id = $1]
+2023-08-18 01:12:52.701  INFO 23052 --- [reactor-http-nio-5] c.m.service.impl.ProcedureServiceImpl    : Procedimiento encontrado con el ID = 13
+2023-08-18 01:12:52.707 DEBUG 23052 --- [reactor-http-nio-5] o.s.d.r2dbc.core.NamedParameterExpander  : Expanding SQL statement [SELECT * FROM procedure WHERE id = :id] to [SELECT * FROM procedure WHERE id = $1]
+2023-08-18 01:21:03.351  INFO 23052 --- [reactor-http-nio-5] c.m.service.impl.ProcedureServiceImpl    : Procedimiento encontrado con el ID = 13
+2023-08-18 01:21:03.353 DEBUG 23052 --- [reactor-http-nio-5] o.s.d.r2dbc.core.NamedParameterExpander  : Expanding SQL statement [SELECT * FROM procedure WHERE id = :id] to [SELECT * FROM procedure WHERE id = $1]
+2023-08-18 01:21:13.212  INFO 23052 --- [reactor-http-nio-5] c.m.service.impl.ProcedureServiceImpl    : Procedimiento encontrado con el ID = 13
+2023-08-18 01:21:13.213 DEBUG 23052 --- [reactor-http-nio-5] o.s.d.r2dbc.core.NamedParameterExpander  : Expanding SQL statement [SELECT * FROM procedure WHERE id = :id] to [SELECT * FROM procedure WHERE id = $1]
+2023-08-18 01:21:27.066  INFO 23052 --- [reactor-http-nio-5] c.m.service.impl.ProcedureServiceImpl    : Procedimiento encontrado con el ID = 13
+2023-08-18 01:21:27.069 DEBUG 23052 --- [reactor-http-nio-5] o.s.d.r2dbc.core.NamedParameterExpander  : Expanding SQL statement [SELECT * FROM procedure WHERE id = :id] to [SELECT * FROM procedure WHERE id = $1]
+2023-08-18 01:22:29.520  INFO 23052 --- [reactor-http-nio-5] c.m.service.impl.ProcedureServiceImpl    : Procedimiento encontrado con el ID = 13
+2023-08-18 01:22:29.522 DEBUG 23052 --- [reactor-http-nio-5] o.s.d.r2dbc.core.NamedParameterExpander  : Expanding SQL statement [SELECT * FROM procedure WHERE id = :id] to [SELECT * FROM procedure WHERE id = $1]
+2023-08-18 01:22:43.652  INFO 23052 --- [reactor-http-nio-5] c.m.service.impl.ProcedureServiceImpl    : Procedimiento encontrado con el ID = 13
+2023-08-18 01:22:43.653 DEBUG 23052 --- [reactor-http-nio-5] o.s.d.r2dbc.core.NamedParameterExpander  : Expanding SQL statement [SELECT * FROM procedure WHERE id = :id] to [SELECT * FROM procedure WHERE id = $1]
+2023-08-18 01:22:47.859  INFO 23052 --- [reactor-http-nio-5] c.m.service.impl.ProcedureServiceImpl    : Procedimiento encontrado con el ID = 13
+2023-08-18 01:22:47.861 DEBUG 23052 --- [reactor-http-nio-5] o.s.d.r2dbc.core.NamedParameterExpander  : Expanding SQL statement [SELECT * FROM procedure WHERE id = :id] to [SELECT * FROM procedure WHERE id = $1]
+2023-08-18 01:23:21.442  INFO 23052 --- [reactor-http-nio-5] c.m.service.impl.ProcedureServiceImpl    : Procedimiento encontrado con el ID = 13
+2023-08-18 01:23:21.443 DEBUG 23052 --- [reactor-http-nio-5] o.s.d.r2dbc.core.NamedParameterExpander  : Expanding SQL statement [SELECT * FROM procedure WHERE id = :id] to [SELECT * FROM procedure WHERE id = $1]

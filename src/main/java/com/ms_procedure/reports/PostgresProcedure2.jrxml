@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.16.0.final using JasperReports Library version 6.16.0-48579d909b7943b64690c65c71e07e0b80981928  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="PostgresProcedure" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="df013db5-f76e-44d3-b0df-bcbc46d93160">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="PostgreProcedure"/>
+	<style name="Title" fontName="Times New Roman" fontSize="50" isBold="true"/>
+	<style name="SubTitle" forecolor="#736343" fontName="Arial" fontSize="18"/>
+	<style name="Column header" forecolor="#666666" fontName="Arial" fontSize="12" isBold="true"/>
+	<style name="Detail" fontName="Arial" fontSize="12"/>
+	<style name="Row" mode="Transparent">
+		<conditionalStyle>
+			<conditionExpression><![CDATA[$V{REPORT_COUNT}%2 == 0]]></conditionExpression>
+			<style backcolor="#E6DAC3"/>
+		</conditionalStyle>
+	</style>
+	<parameter name="tit" class="java.lang.Long" nestedType="tit"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT *
+FROM procedure
+WHERE 
+	 procedure.id = $P{tit}]]>
+	</queryString>
+	<field name="id" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="id"/>
+		<property name="com.jaspersoft.studio.field.label" value="id"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="procedure"/>
+	</field>
+	<group name="Group1">
+		<groupExpression><![CDATA[$F{id}]]></groupExpression>
+		<groupHeader>
+			<band height="116">
+				<staticText>
+					<reportElement style="Title" x="27" y="77" width="726" height="30" uuid="62885dbf-4f10-423f-983e-54af88883bd8"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="16" isBold="true"/>
+					</textElement>
+					<text><![CDATA[PROFESIONAL, TÉCNICO EN ANÁLISIS DE SISTEMAS]]></text>
+				</staticText>
+				<staticText>
+					<reportElement style="Title" x="247" y="1" width="412" height="32" uuid="4250cec7-cbd0-4463-be6a-6e9281b28f04"/>
+					<textElement verticalAlignment="Middle">
+						<font size="20"/>
+					</textElement>
+					<text><![CDATA[ILLANES GONZALES, FLAVIO ALONSO]]></text>
+				</staticText>
+				<staticText>
+					<reportElement style="Title" x="17" y="2" width="120" height="41" uuid="776192dc-8902-4fe8-a120-80cfb49d9f05"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="16" isBold="false"/>
+					</textElement>
+					<text><![CDATA[Por cuanto Don:]]></text>
+				</staticText>
+				<staticText>
+					<reportElement style="Title" x="20" y="83" width="160" height="20" uuid="84651050-d357-462b-bfe9-dc0f9539aca2"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="16" isBold="false"/>
+					</textElement>
+					<text><![CDATA[....................................................................................................................................................]]></text>
+				</staticText>
+				<staticText>
+					<reportElement style="Title" x="600" y="83" width="160" height="20" uuid="f224344d-0859-4d65-8147-387017389e8d"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="16" isBold="false"/>
+					</textElement>
+					<text><![CDATA[................................................................................................................................................]]></text>
+				</staticText>
+				<staticText>
+					<reportElement style="Title" x="23" y="43" width="726" height="41" uuid="748fc1da-d3a3-443f-8694-b93680fe5411"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="16" isBold="false"/>
+					</textElement>
+					<text><![CDATA[Ha cumplido satisfactoriamente con las normas y disposiciones reglamentarias vigente, le otorga el título de : .....]]></text>
+				</staticText>
+				<staticText>
+					<reportElement style="Title" x="138" y="7" width="620" height="30" uuid="e85ac108-c053-41c5-8cab-7935520a7599"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="16" isBold="false"/>
+					</textElement>
+					<text><![CDATA[........................................................................................................................................................]]></text>
+				</staticText>
+			</band>
+		</groupHeader>
+		<groupFooter>
+			<band height="19"/>
+		</groupFooter>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="259" splitType="Stretch">
+			<staticText>
+				<reportElement style="Title" x="300" y="79" width="210" height="32" uuid="18d06835-e503-4f32-ba95-632f3db65b70"/>
+				<textElement verticalAlignment="Middle">
+					<font size="25"/>
+				</textElement>
+				<text><![CDATA[República del Perú]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Title" x="252" y="109" width="318" height="40" uuid="cf56cd2d-40a5-4086-bc2c-a936a653d360"/>
+				<textElement verticalAlignment="Middle">
+					<font size="28"/>
+				</textElement>
+				<text><![CDATA[Ministerio de Educación]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Title" x="176" y="159" width="500" height="42" uuid="f99fefd7-9cd5-422e-a00e-5533d1a0831f"/>
+				<textElement verticalAlignment="Middle">
+					<font size="36"/>
+				</textElement>
+				<text><![CDATA[A NOMBRE DE LA NACIÓN]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Title" x="1" y="209" width="791" height="50" uuid="1f2ec9e2-dc6c-4765-aead-6b8b90c6ec4f"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[EL DIRECTOR GENERAL DEL INSTITUTO DE EDUCACIÓN SUPERIOR TECNOLÓGICO PRIVADO "VALLE GRANDE"]]></text>
+			</staticText>
+			<image>
+				<reportElement x="20" y="60" width="140" height="100" uuid="cf8e6485-cfa8-4a29-afbd-485d022247b1"/>
+				<imageExpression><![CDATA["unnamed (1).png"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="640" y="20" width="162" height="135" uuid="00749d44-63b7-4228-94fa-0c0d56aaf639"/>
+				<imageExpression><![CDATA["usuariooo.png"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="367" y="9" width="100" height="70" uuid="b13912ab-4925-48bb-b917-26e6d871d30a"/>
+				<imageExpression><![CDATA["escudo.png"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="9" splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="15" splitType="Stretch"/>
+	</detail>
+	<columnFooter>
+		<band height="139" splitType="Stretch">
+			<staticText>
+				<reportElement style="Title" x="16" y="-22" width="120" height="26" uuid="7bb6328b-6c3d-401f-bcea-41a37e00bef8"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="16" isBold="false"/>
+				</textElement>
+				<text><![CDATA[POR TANTO :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Title" x="490" y="26" width="238" height="26" uuid="62f529da-d9fb-4cc3-a092-5f635cc4c0c2"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="16" isBold="false"/>
+				</textElement>
+				<text><![CDATA[del mes de agosto del 2023.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Title" x="505" y="6" width="310" height="26" uuid="6b9b8cd8-3bef-480e-9f6b-ace855f036b8"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="16" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Dado en San Vicente de Cañete a los 14 días]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Title" x="5" y="3" width="469" height="26" uuid="eead8e95-a4d2-4a9f-9931-23613cdadd51"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="16" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Se expide el presente TÍTULO para que se le reconozca como tal :]]></text>
+			</staticText>
+			<image>
+				<reportElement x="246" y="49" width="213" height="77" uuid="793f1f4b-7ff3-47e1-90ac-9e23cbdee947"/>
+				<imageExpression><![CDATA["sellito.png"]]></imageExpression>
+			</image>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="25" splitType="Stretch">
+			<frame>
+				<reportElement mode="Opaque" x="-21" y="1" width="843" height="24" forecolor="#D0B48E" backcolor="#F2EBDF" uuid="5d8169bd-4a75-48c8-8a68-6d3ad5ba9402"/>
+				<textField evaluationTime="Report">
+					<reportElement style="Column header" x="783" y="1" width="40" height="20" forecolor="#736343" uuid="e5e27efa-b599-499b-9ca3-848cb511cb7b"/>
+					<textElement verticalAlignment="Middle">
+						<font size="10" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement style="Column header" x="703" y="1" width="80" height="20" forecolor="#736343" uuid="18cfe1ca-f7d6-48b0-9827-28578b42a5e0"/>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font size="10" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
+				</textField>
+				<textField pattern="EEEEE dd MMMMM yyyy">
+					<reportElement style="Column header" x="22" y="1" width="197" height="20" forecolor="#736343" uuid="fbce24bb-3cb1-44a3-8eec-8c067ddbe5b5"/>
+					<textElement verticalAlignment="Middle">
+						<font size="10" isBold="false"/>
+					</textElement>
+					<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+				</textField>
+				<frame>
+					<reportElement mode="Opaque" x="640" y="1" width="21" height="22" forecolor="#B89F7D" backcolor="#F2EBDF" uuid="ff649bda-bbd1-4c2d-bd67-21f69ad64bbf"/>
+					<textField>
+						<reportElement style="SubTitle" x="-145" y="-286" width="62" height="34" forecolor="#736343" uuid="b5a25815-f4ed-4382-9712-d113dc519d4e"/>
+						<textElement>
+							<font size="8" isBold="false"/>
+						</textElement>
+						<textFieldExpression><![CDATA[$F{id}]]></textFieldExpression>
+					</textField>
+				</frame>
+			</frame>
+		</band>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>
